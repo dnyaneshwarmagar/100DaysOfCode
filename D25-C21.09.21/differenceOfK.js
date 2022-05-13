@@ -53,8 +53,4 @@ if (process.env.USERNAME === "vishw") {
     });
 }
 
-process.on("SIGINT", function () {
-    read = read.replace(/\n$/, "");
-    runProgram(read);
-    process.exit(0);
-});
+
